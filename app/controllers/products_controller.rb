@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-      if @proudct.save
+      if @product.save
         redirect_to products_url
       else
         render :new
@@ -41,7 +41,7 @@ class ProductsController < ApplicationController
 
   private
 
-  def picture_params
+  def product_params
     params.require(:product).permit(:name, :description, :price_in_cents)
   end
 end
