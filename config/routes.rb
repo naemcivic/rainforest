@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root 'proudcts#index'
+  root 'products#index'
   resources :products
 
 
