@@ -1,6 +1,6 @@
-This Web Application is a basic clone of online listing services like
+<H3>This Web Application is a basic clone of online listing services like
 Amazon, where users can sign-up to view listings, pose item Listings for sale
-and leave a review for an item.
+and leave a review for an item.</h3>
 
 The primary features of Ruby on Rails to build this web app is:
 
