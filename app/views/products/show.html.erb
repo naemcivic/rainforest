@@ -1,5 +1,5 @@
 <h3>Reviews</h3>
-
+<%= link_to "Home", products_path %>
   <p>Reviews for <%= @product.name %></p>
 
   <% @product.reviews.each do |review| %>
@@ -15,7 +15,7 @@
 
 
     <%= image_tag @product.url %>
-
+  <h5><%= link_to 'Edit Listing', edit_product_url(@product) %> | <%= link_to 'Delete Listing', product_path(@product), method: :delete, data: {confirm: "Would you like to delete the listing with the ID: #{@product.id}"} %></h5>
   <% if current_user %>
   <h4>New Review</h4>
 
