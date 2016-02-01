@@ -8,10 +8,8 @@ and leave a review for an item.</h3>
     * Using different controllers for corresponding actions
     * Validations of user input
     * Authentication via Bcrypt
+    * controlling sessions via seesions#controller
     * Basic Authorizations
     * Filters and helper methods
     * Partial Forms deployed to help make code less chunky to be
       more managable.
-
-
-    Things I would like to learn more of are Filters and Helper Methods.
