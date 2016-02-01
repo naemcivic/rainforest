@@ -2,7 +2,7 @@
 Amazon, where users can sign-up to view listings, pose item Listings for sale
 and leave a review for an item.</h3>
 
-The primary features of Ruby on Rails to build this web app is:
+<H2>The primary features of Ruby on Rails to build this web app is: </h2>
 
     * Using 3 different models which are associated.
     * Using different controllers for corresponding actions
