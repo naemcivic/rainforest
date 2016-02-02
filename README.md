@@ -12,4 +12,4 @@ and leave a review for an item.</h3>
     * Basic Authorizations
     * Filters and helper methods
     * Partial Forms deployed to help make code less chunky to be
-      more managable.
+      more manageable.
