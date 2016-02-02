@@ -1,0 +1,8 @@
+<h1>Members Listing</h1>
+<% @users.each do |member| %>
+<div class="complete_member_list">
+  <ul>
+    <li><%= link_to "#{member.name}'s profile", user_path(member.id) %> </li>
+  </ul>
+<% end %>
+</div>

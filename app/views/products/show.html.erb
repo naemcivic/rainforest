@@ -1,21 +1,28 @@
 <h3>Reviews</h3>
 <%= link_to "Home", products_path %>
-  <p>Reviews for <%= @product.name %></p>
 
-  <% @product.reviews.each do |review| %>
+
+  <% if current_user %>
+  <p><em>Reviews for <%= @product.name %></em></p>
+  <% @product.reviews.order(created_at: :desc).each do |review| %>
     <p>
         <%= review.comment %>
       <br>
       <% if review.user != nil %>
         <em> by <%= review.user.name %></em>
-        Added on: <%= review.created_at %>
+        Added on: <%= review.created_at  %>
       <% end %>
     </p>
   <% end %>
+  <% end %>
+
+  <%= image_tag @product.url, {size: "320x240"}%>
 
 
-    <%= image_tag @product.url %>
+
   <h5><%= link_to 'Edit Listing', edit_product_url(@product) %> | <%= link_to 'Delete Listing', product_path(@product), method: :delete, data: {confirm: "Would you like to delete the listing with the ID: #{@product.id}"} %></h5>
+
+
   <% if current_user %>
   <h4>New Review</h4>
 

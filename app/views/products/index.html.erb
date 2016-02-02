@@ -1,5 +1,9 @@
 <h1>Welcome to Rainforest</h1>
-<h2><%= link_to 'List a new item', new_product_path %></h2>
+<nav>
+  <%= link_to 'List a new item', new_product_path %>
+  <%= link_to "See the Member's directory", users_url %>
+</nav>
+
 <h3>Total Products listed: <%=Product.all.length %></h3>
 <h4>Goods listed</h4>
 <ul id = "allproducts">
@@ -8,7 +12,7 @@
 <li><%= details.name %></li>
 <li><%= details.description %></li>
 <li><%= "Price: $#{details.formatted_price}" %></li>
-<%= image_tag details.url %>
+<%= image_tag details.url, {size: "320x240"} %>
 <p><%= link_to 'See product reviews', "products/#{details.id}" %></p>
 <% end %>
 </ul>

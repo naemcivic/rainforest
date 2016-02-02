@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+
+  # skip_before_action :ensure_logged_in, except: [:destroy]  ####Filter applied 
+
   def new
   end
 
