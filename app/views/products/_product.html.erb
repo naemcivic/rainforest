@@ -1,0 +1,10 @@
+<h3>Total Products listed: <%=Product.all.length %></h3>
+<h4>Goods listed</h4>
+<ul id = "allproducts">
+<li><%= "Listing id: #{product.id}" %></li>
+<li><%= product.name %></li>
+<li><%= product.description %></li>
+<li><%= "Price: $#{product.formatted_price}" %></li>
+<%= image_tag product.url, {size: "320x240"} %>
+<p><%= link_to 'See product reviews', "products/#{product.id}" %></p>
+</ul>
